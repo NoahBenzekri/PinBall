@@ -1,0 +1,56 @@
+# Super Buy Bonus Mode System
+
+## Overview
+The Super Buy allows the player to spend in-game currency to enter a bonus mode where multiple balls are automatically dropped into multiplier bins.
+
+This system handles economy validation, UI updates, game state transitions, automated gameplay, and camera control.
+
+## Purchase Logic
+The Super Buy button is only enabled when the player's balance is greater than or equal to the Super Buy cost.
+
+BalanceAfterPurchase = CurrentBalance - SuperBuyCost
+
+If the purchase is valid:
+- The cost is subtracted from the balance
+- Balance UI text updates
+- Super Buy button state updates
+- Bonus mode begins
+
+
+
+## Bonus Mode Trigger
+After purchase:
+1. The main game is disabled
+2. Bonus mode state is activated
+3. Camera transitions to the SuperBuy view
+4. Automated ball drop sequence begins
+
+
+## Automated Ball Drop 
+- A total of 10 balls are spawned automatically
+- Balls are released sequentially with a timed delay
+- Physics determines ball movement into multiplier bins
+
+This removes player input and focuses on reward randomness.
+
+
+## Multiplier Bin Logic
+Each bin applies a multiplier to the reward value:
+
+FinalReward = BaseValue × BinMultiplier
+
+The total payout is accumulated across all 10 balls.
+
+
+## Camera Control
+During bonus mode:
+- Camera smoothly transitions to a fixed SuperBuy angle
+
+---
+
+## Bonus Completion
+When all balls finish:
+- Total reward is calculated and shown on a reward UI box 
+- Balance is updated
+- UI reflects the new balance
+- Game returns to normal pinball mode
