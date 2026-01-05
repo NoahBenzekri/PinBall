@@ -6,7 +6,7 @@ Tron-inspired pinball game developed in Unreal Engine 5 using Blueprints.
 - Scoring system with multipliers and combo logic
 - Bumpers, ramps, and trigger-based interactions
 - UI scoreboard and game state flow
-- Superbuy Mechanic  
+- Superbuy System
 
 # Tech Stack
 - Unreal Engine 5
