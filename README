@@ -1,0 +1,21 @@
+Tron-inspired pinball game developed in Unreal Engine 5 using Blueprints.
+
+# Features
+- Flipper mechanics with impulse-based physics
+- Ball launcher with charge-based power control
+- Scoring system with multipliers and combo logic
+- Bumpers, ramps, and trigger-based interactions
+- UI scoreboard and game state flow
+- Superbuy Mechanic  
+
+# Tech Stack
+- Unreal Engine 5
+- Blueprints
+- Physics Constraints
+- UMG (UI)
+
+# Status
+In development
+
+## Media
+Screenshots and gameplay clips coming soon.
