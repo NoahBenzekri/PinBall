@@ -14,8 +14,16 @@ Tron-inspired pinball game developed in Unreal Engine 5 using Blueprints.
 - Physics Constraints
 - UMG (UI)
 
+
+## Featured System - Super Buy Bonus Mode 
+The Super buy System transitions the game into a Plinko-Style bonus mode featuring automated ball drops, multiplier bins, UI state updates and camera control.
+
+
 # Status
 In development
 
 ## Media
 Screenshots and gameplay clips coming soon.
+
+
+
